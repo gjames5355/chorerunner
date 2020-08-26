@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AddTask as expected 1`] = `
+<button
+  id="toggle-add-task"
+  onClick={[Function]}
+>
+  + assign tasks
+</button>
+`;

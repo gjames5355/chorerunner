@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeaderBoard component testing renders UI as expected 1`] = `
+<section
+  className="leader_board"
+>
+  <h3>
+    Leaderboard
+  </h3>
+  <div
+    className="leader_board-grid"
+  >
+    <div
+      className="header_rank"
+    >
+      <span>
+        Rank
+      </span>
+    </div>
+    <div
+      className="header_name"
+    >
+      <span>
+        Member Name
+      </span>
+    </div>
+    <div
+      className="header_score"
+    >
+      <span>
+        Score
+      </span>
+    </div>
+  </div>
+  <ul
+    className="rankings"
+  />
+</section>
+`;

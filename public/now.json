@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "alias": "chorerunner",
+  "name": "chorerunner",
+  "routes": [{
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}

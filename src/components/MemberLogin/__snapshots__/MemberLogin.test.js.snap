@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemberLogin component testing renders UI as expected 1`] = `
+<div
+  className="parent-login"
+>
+  <h2>
+    Member login
+  </h2>
+  <div
+    className="demo"
+  >
+    <h3>
+      Demo:
+    </h3>
+    <p>
+      username: bartman
+    </p>
+    <p>
+      password: bartman
+    </p>
+  </div>
+  <form
+    className="parent-form-container"
+    id="member-login"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="username"
+      >
+        Username
+      </label>
+      <input
+        name="username"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        name="password"
+        onChange={[Function]}
+        required={true}
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      role="alert"
+    />
+    <button
+      type="submit"
+    >
+      login
+    </button>
+  </form>
+</div>
+`;
+
+exports[`MemberLogin component testing renders empty given no tabs 1`] = `
+<div
+  className="parent-login"
+>
+  <h2>
+    Member login
+  </h2>
+  <div
+    className="demo"
+  >
+    <h3>
+      Demo:
+    </h3>
+    <p>
+      username: bartman
+    </p>
+    <p>
+      password: bartman
+    </p>
+  </div>
+  <form
+    className="parent-form-container"
+    id="member-login"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="username"
+      >
+        Username
+      </label>
+      <input
+        name="username"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        name="password"
+        onChange={[Function]}
+        required={true}
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      role="alert"
+    />
+    <button
+      type="submit"
+    >
+      login
+    </button>
+  </form>
+</div>
+`;

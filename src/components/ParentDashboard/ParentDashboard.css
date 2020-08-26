@@ -1,0 +1,413 @@
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Electrolize', sans-serif; */
+
+.parent_dashboard {
+  align-items: center;
+  width: 100%;
+  height: 88vh;
+  padding-top: 12vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent_dashboard-feedback {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 30px 10px;
+  background: rgb(0, 0, 0, .5);
+  position: relative;
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  border-radius: 10px;
+  margin-top: 15vh;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+
+.household-add-form-feedback {
+  padding: 5px;
+  margin: 0;
+  color: white;
+}
+
+.card-info {
+  padding-top: 40px;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+.add-member button,
+.add-household button {
+  text-align: center;
+  margin: 20px 5px;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(255, 217, 0);
+  text-shadow: -1px -1px rgb(105, 90, 0), 1px 1px white;
+  color: #725F00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .3em rgb(134, 112, 0);
+  cursor: pointer;
+}
+
+
+.add-member label {
+  font-size: 20px;
+  color: rgb(255, 217, 0);
+  padding-bottom: 5px;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.household-details,
+.add-household {
+  padding-top: 50px;
+}
+
+.household-details input {
+  margin-bottom: 20px;
+  width: 270px;
+}
+
+.add-house-label {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+  line-height: 25px;
+  margin: 0;
+  padding: 20px 20px
+}
+
+.add-household-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.add-member p {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+  line-height: 25px;
+  margin: 0;
+  text-align: center;
+}
+
+.household_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.house_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  min-height: 250px;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 23px;
+  padding: 10px;
+  background-color: #3E5AD6;
+  /* text-shadow: -1px -1px rgb(105, 90, 0), 1px 1px white; */
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 9px;
+  border: #334AB0 solid 1px;
+  box-shadow: 0 .3em #334AB0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+
+}
+
+.buttons-container button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+/* .buttons-container button:hover{
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  
+} */
+
+.trash-icon:hover,
+.pen-icon:hover,
+.save-icon:hover {
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  color: rgb(255, 217, 0);
+  /* yellow */
+}
+
+.add-member {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-input-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.edit-input-field button {
+  background-color: transparent;
+  border: 0;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.update-household {
+  width: 70%;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 18px;
+
+}
+
+/*-------- typography -------------- */
+.parent_dashboard-feedback p {
+  padding: 5px;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.parent_dashboard-feedback p>span {
+  color: #b1b1b1
+}
+
+.parent_dashboard-feedback h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+}
+
+.house_card li,
+.house_card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.see-dash {
+  cursor: pointer;
+  color: #b1b1b1;
+  font-family: 'Electrolize', sans-serif;
+  position: absolute;
+  left: 5%;
+
+}
+
+.see-dash:hover {
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  color: white;
+}
+
+.card-info>p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+}
+
+.house_card p {
+  padding: 15px 0;
+  margin: 0;
+  font-weight: 600;
+  color: rgb(255, 217, 0);
+  text-align: center;
+}
+
+.card-info li>span a {
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+}
+
+.house_card ul>li {
+  line-height: 35px;
+}
+
+.alertMsg {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 16px;
+}
+
+.house_card ul {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+
+/*  ------------- select dropdown ------------- */
+.select-css {
+  font-size: 16px;
+  font-family: 'Electrolize', sans-serif;
+  /* font-weight: 600; */
+  color: #444;
+  line-height: 1.3;
+  padding: .6em 2em .5em .8em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  /* will use a different arrow icon because cookies n stuff*/
+  background-image: url('https://image.flaticon.com/icons/svg/60/60995.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+  margin: 20px 0;
+}
+
+.select-css::-ms-expand {
+  display: none;
+}
+
+.select-css:hover {
+  border-color: #888;
+  cursor: pointer;
+}
+
+.select-css:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.select-css option {
+  font-weight: normal;
+}
+
+/* ------------- select dropdown ------------- */
+
+
+@media screen and (min-width:580px) {
+
+  .house_card {
+    width: 300px;
+  }
+
+  .parent_dashboard-feedback {
+    width: 500px;
+  }
+
+  .edit-input-field {
+    width: 350px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:800px) {
+
+  .house_card {
+    width: 460px;
+  }
+
+  .add-household {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .household-details {
+    display: inline-block;
+    width: 50%;
+  }
+
+
+  /* .add-household-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .add-household-form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .add-household-form input {
+    margin-top: 10px;
+  }  */
+  /* 
+  .add-household-form button {
+    width: 25%;
+    margin: 10px auto;
+    word-wrap: break-word;
+  } */
+
+  /* .house_card {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+  } */
+}
+
+@media screen and (min-width:950px) {
+  .add-forms-container {
+    width: 950px;
+  }
+}

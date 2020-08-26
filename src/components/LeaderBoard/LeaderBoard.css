@@ -1,0 +1,142 @@
+body {
+  font-size: 1em;
+}
+
+.leaderboard_container {
+  background: rgba(0, 0, 0, 0.7);
+  /* border-radius: 10px; */
+  min-width: 40%;
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 10px;
+}
+
+.leader_board {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.leader_board h3 {
+  color: rgb(255, 217, 0);
+}
+
+.headerRow {
+  width: auto;
+  display: flex;
+  padding: 5px 0;
+  border-bottom: 1px solid white;
+}
+
+.header_rank,
+.header_name,
+.header_score {
+  text-align: center;
+}
+
+.score_display {
+  width: auto;
+  margin: 10px auto;
+}
+
+.leader_board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 15px;
+}
+
+.rankings {
+  /* width: 80%; */
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  list-style: none;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-family: 'Electrolize', sans-serif;
+
+}
+
+.rankings li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rankings li:nth-child(-n + 3):before {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../../ImgAssets/ChoreRunner.png');
+}
+
+.rankings li:nth-child(1):before {
+  background-image: url('../../ImgAssets/FirstCup.png');
+  display: block;
+  margin: 0 auto;
+  background-size: 80px;
+  height: 100px;
+  width: 80px;
+}
+
+.rankings li:nth-child(2):before {
+  background-image: url('../../ImgAssets/SecondCup.png');
+  display: block;
+  margin: 0 auto;
+  background-size: 80px;
+  height: 100px;
+  width: 80px;
+}
+
+.rankings li:nth-child(3):before {
+  background-image: url('../../ImgAssets/ThirdCup.png');
+  display: block;
+  margin: 0 auto;
+  background-size: 80px;
+  height: 100px;
+  width: 80px;
+}
+
+.rankings li:nth-child(-n + 3) .score {
+  display: block;
+}
+
+.rank {
+  font-size: 30px;
+}
+
+.name_col {
+  text-align: center;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.score_col {
+  text-align: center;
+}
+
+
+@media (min-width:500px) {
+  .leaderboard_container {
+    width: 70%;
+  }
+
+  .rankings {
+    font-size: 1.3em;
+    font-family: 'Electrolize', sans-serif;
+  }
+}
+
+@media (min-width:850px) {
+  .leaderboard_container {
+    width: 700px;
+  }
+
+  .rankings {
+    font-size: 1.4em;
+    font-family: 'Electrolize', sans-serif;
+  }
+}

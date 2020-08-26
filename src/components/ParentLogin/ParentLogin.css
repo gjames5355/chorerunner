@@ -1,0 +1,111 @@
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Electrolize', sans-serif; */
+
+.parent-login {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  overflow-y: auto;
+}
+
+.parent-login>h2 {
+  color: rgb(255, 217, 0);
+  font-size: 30px;
+  text-shadow: -1px -1px rgb(105, 90, 0), 1.5px 1.5px rgb(134, 112, 0);
+}
+
+.parent-form-container {
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.parent-form-container div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.parent-login label {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+  padding-bottom: 10px;
+}
+
+div[role="alert"]>p {
+  color: white;
+  width: auto;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+input {
+  font-size: 17px;
+  padding-left: 25px;
+  padding-right: 15px;
+  color: rgb(105, 90, 0);
+  font-family: 'Electrolize', sans-serif;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: white;
+  border: 0;
+}
+
+.parent-login button {
+  width: 120px;
+  text-align: center;
+
+  margin: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  padding: 7px;
+  background-color: rgb(255, 217, 0);
+  text-shadow: -1px -1px rgb(105, 90, 0), 1px 1px white;
+  color: #725F00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .3em rgb(134, 112, 0);
+  cursor: pointer;
+}
+
+.demo {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 30px 10px;
+  background: rgb(0, 0, 0, .5);
+  position: relative;
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  border-radius: 10px;
+}
+
+.demo p {
+  margin: 0;
+}
+
+@media (min-width: 575px) {
+  .parent-form-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 875px) {
+  .parent-form-container {
+    width: 320px;
+  }
+}

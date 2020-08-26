@@ -1,0 +1,9 @@
+.notfound-container {
+  height: 100vh;
+}
+
+.notfound-container h2 {
+  margin: 0;
+  padding-top: 300px;
+  color: blanchedalmond;
+}

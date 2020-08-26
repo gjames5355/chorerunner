@@ -1,0 +1,16 @@
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.add-task-form input {
+  width: 200px;
+  height: 36px;
+}
+
+#assignee {
+  border-radius: 15px;
+}

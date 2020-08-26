@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Tasks To approve as expected 1`] = `
+<section
+  className="tasks-to-approve"
+>
+  <h3>
+    Completed Tasks
+  </h3>
+  <ul
+    className="householdpage-member-task-list"
+  />
+</section>
+`;

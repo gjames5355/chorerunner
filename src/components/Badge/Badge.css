@@ -1,0 +1,148 @@
+.levelInfo {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 95%;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+
+
+.badge {
+  width: 30%;
+  padding: 10px;
+  margin: 10px auto;
+  height: auto;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.level {
+  width: 90%;
+  padding: 5px;
+  margin: 10px auto;
+  height: auto;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-align: left;
+}
+
+.image img {
+  padding-top: 25px;
+  height: 200px;
+}
+
+.level p {
+  font-family: 'Press Start 2P', cursive;
+  text-align: left;
+}
+
+.level_totalScore {
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+  .levelInfo {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .badge {
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
+
+  .image img {
+    padding-top: 25px;
+    height: 250px;
+  }
+
+
+  .level {
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    height: auto;
+    min-height: 100px;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+
+  .level p {
+    font-family: 'Press Start 2P', cursive;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .levelInfo {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+
+  .badge {
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+    height: auto;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .level {
+    width: 50%;
+    padding: 5px;
+    margin: 10px auto;
+    height: auto;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: left;
+  }
+
+  .image img {
+    padding-top: 25px;
+    height: 200px;
+  }
+
+  .level p {
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    /* margin: 0; */
+  }
+
+  .level_totalScore {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .levelInfo {
+    width: 700px;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Parent Login as expected 1`] = `
+<div
+  className="parent-login container"
+>
+  <h2>
+    Parent Login
+  </h2>
+  <div
+    className="demo"
+  >
+    <h3>
+      Demo:
+    </h3>
+    <p>
+      username: margeincharge
+    </p>
+    <p>
+      password: Password123!
+    </p>
+  </div>
+  <form
+    className="parent-form-container"
+    onSubmit={[Function]}
+  >
+    <div>
+      <label
+        htmlFor="username"
+      >
+        Username
+      </label>
+      <input
+        name="username"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        name="password"
+        onChange={[Function]}
+        required={true}
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      role="alert"
+    />
+    <button
+      type="submit"
+    >
+      login
+    </button>
+  </form>
+</div>
+`;

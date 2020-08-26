@@ -1,0 +1,218 @@
+.memberDashboard {
+  position: relative;
+  height: 70vh;
+  padding: 15vh 0;
+  overflow-y: auto;
+  background-image: url('../../ImgAssets/ChoreRunner.png');
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat;
+  animation: house 45s linear infinite;
+}
+
+.chores-container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.points span {
+  color: white;
+  font-size: 18px;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.taskName p {
+  color: white;
+  font-size: 30px;
+}
+
+
+.chores-container h2 {
+  padding-top: 20px;
+  color: rgb(255, 217, 0);
+  font-size: 20px;
+  text-shadow: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.member-container {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 15vh;
+}
+
+.badge-task-container {
+  margin: 0 auto 50px auto;
+}
+
+.task-control button {
+  text-align: center;
+  margin: 20px 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+  padding: 10px;
+  background-color: rgb(255, 217, 0);
+  text-shadow: -.5px -1px rgb(105, 90, 0), 1px 1px white;
+  color: #725F00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .3em rgb(134, 112, 0);
+  cursor: pointer;
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  cursor: pointer;
+
+}
+
+@keyframes house {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -13690px 0;
+  }
+}
+
+/* .background-img{
+    background-image: url("../../images/ChoreRunner.png");
+    background-size: cover;
+    height: 100vh;
+} */
+
+.task_list ul {
+  padding: 0;
+}
+
+.task_list li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task_list p {
+  max-width: 200px;
+}
+
+.task_list li button {
+  margin: 15px auto;
+  font-size: 17px;
+  min-width: 80px;
+}
+
+@media screen and (min-width: 470px) {
+
+  /* 
+  .chores-container p,
+  .chores-container span {
+    color: white;
+    font-size: 30px;
+  } */
+  .chores-container h2 {
+    padding-top: 20px;
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+    text-shadow: none;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .member-container {
+    position: absolute;
+    width: 100%;
+  }
+
+  @keyframes house {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -13690px 0;
+    }
+  }
+
+  /* .background-img{
+        background-image: url("../../images/ChoreRunner.png");
+        background-size: cover;
+        height: 100vh;
+    } */
+  .task_list li {
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task_list p {
+    text-align: left;
+    max-width: 200px;
+  }
+
+  .points {
+    /* margin: 0 20px; */
+    min-width: 80px;
+  }
+
+  .taskName {
+    min-width: 45%;
+  }
+
+  .task-name {
+    min-width: 250px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .memberDashboard {
+    position: relative;
+    height: 70vh;
+    overflow-y: auto;
+    background-image: url("../../ImgAssets/ChoreRunner.png");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat;
+    animation: house 45s linear infinite;
+  }
+
+  .chores-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+  }
+
+
+
+}
+
+@media screen and (min-width: 850px) {
+  .chores-container {
+    width: 60%;
+  }
+
+  .badge-task-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 100px auto;
+    justify-content: space-between;
+
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .chores-container {
+    width: 700px;
+  }
+}

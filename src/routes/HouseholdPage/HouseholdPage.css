@@ -1,0 +1,474 @@
+/* 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Electrolize', sans-serif; */
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+}
+
+.household-page-container {
+  flex-direction: column;
+  height: 88vh;
+  padding-top: 12vh;
+  overflow-y: auto;
+}
+
+.tasks-to-approve h3,
+.assigned-tasks h3 {
+  font-family: 'Electrolize', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 20px;
+  color: rgb(255, 217, 0);
+}
+
+.household-page-container p {
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: white;
+  margin: auto;
+  padding: 5px
+}
+
+.member-name {
+  letter-spacing: 2px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  display: inline;
+  color: rgb(255, 217, 0);
+  width: 60%;
+  overflow-wrap: break-word;
+  padding: 0 5px;
+}
+
+.household-page-container button {
+  font-size: 12px;
+  /* width: 100px; */
+  margin: 5px;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.top-buttons-cont button {
+  text-align: center;
+  margin: 20px 5px;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgb(255, 217, 0);
+  text-shadow: -.5px -1px rgb(105, 90, 0), 1px 1px white;
+  color: #725F00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .3em rgb(134, 112, 0);
+  cursor: pointer;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #3E5AD6;
+  border-radius: 9px;
+  border: #334AB0 solid 1px;
+  box-shadow: 0 .3em #334AB0;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.member-card>p {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 23px;
+}
+
+.delete-edit-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.delete-edit-name button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.pen-button {
+  position: absolute;
+  right: 50px;
+}
+
+.trash-button {
+  position: absolute;
+  right: 10px;
+}
+
+.trash-button:hover,
+.pen-button:hover {
+  animation: bounce 500ms infinite alternate;
+  -webkit-animation: bounce 500ms infinite alternate;
+  color: rgb(255, 217, 0);
+  cursor: pointer;
+}
+
+.householdpage-member-task-list {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 20px;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.assigned-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.assigned-task div {
+  padding: 5px 0;
+}
+
+.title-points {
+  width: 100%;
+}
+
+.tasks-to-approve p,
+.assigned-tasks p {
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 18px;
+  color: #b1b1b1;
+  text-align: center;
+}
+
+.delete-task-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-task-cont p {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 18px;
+  color: #b1b1b1;
+
+}
+
+.completed-task-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thumb-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.hhp-title,
+.hhp-points {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* .hhp-title span, .hhp-points span {
+  padding: 0 10px;
+  text-align:left;
+} */
+
+
+/* 
+SCREEN????--------------
+
+.hhp-title {
+	display: inline-block;
+	width: 50%;
+} */
+
+/* .hhp-points {
+	display: inline-block;
+	width: 30%;
+
+} 
+
+-=----------------*/
+
+.completed-task-container .hhp-points span {
+  text-align: right;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.completed-task-container .hhp-title span {
+  text-align: left;
+  padding: 0 10px;
+  width: 100%;
+}
+
+
+.hhp-title span,
+.hhp-points span {
+  display: block;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+/* ----------- edit member form 0------------ */
+.delete-edit-name .edit-member-container {
+  padding-bottom: 7px;
+  border-radius: 7px;
+  width: 80%;
+  background-color: rgb(255, 217, 0);
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0px 0px 20px;
+
+}
+
+.edit-member-container>p {
+  font-size: 23px;
+  color: #3653D4;
+  text-align: center;
+
+}
+
+#edit-member-form {
+  padding-top: 10px;
+
+}
+
+.edit-member-container label,
+#add-task-form label {
+  font-size: 20px;
+  font-weight: 600px;
+  color: #606060;
+  padding-bottom: 5px;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.edit-member-container input,
+.add-task-form input {
+  background-color: grey;
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+}
+
+#edit-member-form input {
+  display: block;
+  width: 75%;
+  margin: 5px auto;
+}
+
+button.submit-edit-member,
+button.cancel {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+button.submit-edit-member {
+  background-color: rgb(92, 211, 81);
+  /* color: #4B4B4B; */
+}
+
+button.cancel {
+  background-color: grey;
+  /* color: white; */
+}
+
+/* ----------- edit member form 0------------ */
+
+.update-title,
+.update-points {
+  display: block;
+  width: 75%;
+  padding: 0 10px 5px;
+}
+
+#assignee {
+  margin: 0;
+}
+
+.add-task-form label {
+  margin: 10px 5px;
+}
+
+.add-task-form {
+  padding-bottom: 7px;
+  border-radius: 7px;
+  background-color: rgb(255, 217, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  z-index: 1;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  color: black;
+  text-align: center;
+  box-shadow: 0px 0px 20px;
+
+}
+
+.add-task-buttons {
+  width: 100%;
+  text-shadow: 0;
+}
+
+.add-task-buttons .submit,
+.add-task-buttons .cancel {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  font-size: 18px;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  color: black;
+}
+
+.add-task-buttons .submit {
+  background-color: rgb(92, 211, 81);
+}
+
+.add-task-buttons .cancel {
+  background-color: grey;
+}
+
+.add-task-form p {
+  color: #3653D4;
+}
+
+button.delete-task {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (min-width:500px) {
+  .member-card {
+    width: 70%;
+  }
+
+  .household-page-container p {
+    width: 80%;
+  }
+
+  .member-name {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width:800px) {
+  .member-card {
+    width: 60%;
+  }
+
+  .household-page-container p {
+    width: 80%;
+  }
+
+  .householdpage-member-task-list {
+    padding: 0 25px;
+  }
+
+  .edit-member-container {
+    left: 80px;
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 7px;
+  }
+
+  .completed-task {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .completed-task-container {
+    width: 80%
+  }
+
+  .thumb-container {
+    width: 20%;
+    justify-content: space-evenly;
+  }
+
+  .hhp-title {
+    width: 100%;
+  }
+
+  .hhp-points {
+    width: 50%;
+  }
+
+  .title-points {
+    display: flex;
+  }
+
+  .hhp-title,
+  .hhp-points {
+    justify-content: flex-start;
+
+  }
+
+
+
+}
+
+@media screen and (min-width:1100px) {
+  .member-card {
+    width: 50%;
+  }
+
+}
+
+@media screen and (min-width:1400px) {
+  .member-card {
+    width: 600px;
+  }
+
+  /* .add-task-form {
+		position: absolute;
+		left: 2%;
+	} */
+
+  .member-name {
+    text-align: left;
+    padding: 0 50px;
+  }
+
+}

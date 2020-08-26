@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParentDashboard component testing renders UI as expected 1`] = `
+<section
+  className="parent_dashboard"
+>
+  <div
+    className="parent_dashboard-feedback"
+  >
+    <h3>
+      Get Started!
+    </h3>
+    <p>
+      1. Add Households form to create your households.
+    </p>
+    <p>
+      2. Add Members to your household
+    </p>
+    <p>
+      3. Manage your households tasks by clicking
+       
+      <span>
+        'See Household'
+      </span>
+       
+    </p>
+  </div>
+  <div
+    className="add-forms-container"
+  >
+    <div
+      className="add-household container"
+    >
+      <form
+        className="add-household-form"
+        onSubmit={[Function]}
+      >
+        <label
+          className="add-house-label"
+          htmlFor="householdName"
+        >
+           
+          ADD HOUSEHOLD:
+        </label>
+        <input
+          name="householdName"
+          required={true}
+          type="text"
+        />
+        <button
+          className="submitHH"
+          type="submit"
+        >
+          + add new household
+        </button>
+      </form>
+    </div>
+    <div
+      className="household-details container"
+      id="add-member"
+    >
+      <div
+        className="add-member container"
+      >
+        <p>
+          ADD HOUSEHOLD MEMBERS:
+        </p>
+        <form
+          className="add-household-form"
+          id="add-household-form"
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="member-name"
+          >
+            Name
+          </label>
+          <input
+            id="member-name"
+            name="name"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          <label
+            htmlFor="household"
+          >
+            Household
+          </label>
+          <select
+            className="select-css"
+            defaultValue="Select household"
+            id="assignee"
+            name="household_id"
+            onChange={[Function]}
+            required={true}
+            type="text"
+          >
+            <option
+              value=""
+            >
+              Select Household
+            </option>
+          </select>
+          <label
+            htmlFor="child-username"
+          >
+            Member Username
+          </label>
+          <input
+            id="child-username"
+            name="username"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          <label
+            htmlFor="child-password"
+          >
+            Member Password
+          </label>
+          <input
+            id="child-password"
+            name="password"
+            onChange={[Function]}
+            required={true}
+            type="password"
+            value=""
+          />
+          <button
+            className="submitHH"
+            type="submit"
+          >
+            + add new member
+          </button>
+          <div
+            role="alert"
+          >
+            <p
+              className="alertMsg"
+            >
+              
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
+    className="household_buttons"
+  />
+</section>
+`;

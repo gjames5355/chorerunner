@@ -1,0 +1,77 @@
+.register-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.register-container p {
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.register-container h2 {
+  color: rgb(255, 217, 0);
+  font-size: 30px;
+  text-shadow: -1px -1px rgb(105, 90, 0), 1.5px 1.5px rgb(134, 112, 0);
+}
+
+.registration {
+  width: 80%;
+  margin: auto;
+}
+
+div[role="alert"] {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+div[role="alert"] {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.registration input {
+  width: 200px;
+}
+
+.registration label {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 217, 0);
+  padding-bottom: 10px;
+}
+
+.registration button {
+  width: 190px;
+  text-align: center;
+
+  margin: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  padding: 7px;
+  background-color: rgb(255, 217, 0);
+  text-shadow: -1px -1px rgb(105, 90, 0), 1px 1px white;
+  color: #725F00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .3em rgb(134, 112, 0);
+  cursor: pointer;
+}
+
+.formFooter {
+  padding-bottom: 80px;
+}

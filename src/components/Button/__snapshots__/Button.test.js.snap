@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component testing renders UI as expected 1`] = `
+<button
+  className="Button"
+/>
+`;
+
+exports[`Button component testing renders empty given no tabs 1`] = `
+<button
+  className="Button"
+/>
+`;

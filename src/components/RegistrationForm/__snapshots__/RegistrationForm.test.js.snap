@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ResultsPage as expected 1`] = `
+<div
+  className="box"
+>
+  <form
+    className="registration"
+    name="registration-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="formItem"
+    >
+      <label
+        className="Label"
+        htmlFor="registration-name-input"
+      >
+        Enter your name
+        <span
+          className="Required"
+        >
+          *
+        </span>
+      </label>
+      <input
+        className="Input formBox"
+        id="registration-name-input"
+        name="name"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <div
+        role="alert"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="formItem"
+    >
+      <label
+        className="Label"
+        htmlFor="registration-username-input"
+      >
+        Choose a username
+        <span
+          className="Required"
+        >
+          *
+        </span>
+      </label>
+      <input
+        className="Input formBox"
+        id="registration-username-input"
+        name="username"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <div
+        role="alert"
+      >
+        
+      </div>
+    </div>
+    <div
+      className="formItem"
+    >
+      <label
+        className="Label"
+        htmlFor="registration-password-input"
+      >
+        Choose a password
+        <span
+          className="Required"
+        >
+          *
+        </span>
+      </label>
+      <input
+        className="Input formBox"
+        id="registration-password-input"
+        name="password"
+        onChange={[Function]}
+        required={true}
+        type="password"
+        value=""
+      />
+    </div>
+    <div
+      role="alert"
+    />
+    <footer
+      className="formFooter"
+    >
+      <button
+        className="Button basicBtn"
+        type="submit"
+      >
+        Sign up
+      </button>
+       
+      <br />
+    </footer>
+  </form>
+</div>
+`;
